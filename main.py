@@ -1,1 +1,1 @@
-#Hello, this is my repl, nice to meet you.
+print("hello")

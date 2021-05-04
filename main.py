@@ -1,13 +1,12 @@
-def completed(operation):
+
+def entity_details():
     """
-    Task 4: Display a message to indicate that an operation has completed.
-
-    The function should display a message in the following format:
-    '{operation} has completed.'
-    Where {operation} is the value of the parameter passed to this function
-
-    :param operation: A string indicating the operation being completed
-    :return: Does not return anything
+    Task 9: Read in the name of an entity and column indexes. Return a list containing the name and indexes.
+    The function should ask the user to enter the name of an entity e.g. 'Earth'
+    The function should also ask the user to enter a list of integer column indexes e.g. 0,1,5,7
+    The function should return a list containing the name of the entity and the list of column
+    indexes e.g. ['Earth', [0,1,5,7]]
+    :return: A list containing the name of an entity and a list of column indexes
     """
     # TODO: Your code here
-
+    

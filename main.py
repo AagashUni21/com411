@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 def list_entity(entity, cols=[]):
     """
     Task 10: Display an entity. Only the data for the specified column indexes will be displayed.
@@ -30,4 +28,3 @@ def list_entity(entity, cols=[]):
     print(hello)
 
 list_entity("['Earth', TRUE, 9.8]")
->>>>>>> 8687b4286f24ecd38cb16188e8ac43f7668a6a92

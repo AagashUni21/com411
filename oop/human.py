@@ -1,15 +1,27 @@
-#The class i.e. blueprint for my objects
-class Human:
+from inhabitant import Inhabitant
 
-  #Class attribute -> constant, visible to all objects of the class
-  MAX_ENERGY = 100
-  #Initialiser (special instance method, invoked only once, at creation)
-  def __init__(self):
-    #Instance attributes
-      self.name = "Human"
-      self.age = 0
-      self.energy = Human.MAX_ENERGY
-      
+class Human(Inhabitant):
+
+  def __init__(self, name="Human", age=0):
+    super().__init__(name, age)
+
+  def __str__(self):
+    return f"My name is {self.name} and I am {self.age} years old and my energy is {self.energy}."
+
+  def __repr__(self):
+    return f"Human(name = {self.name}, age = {self.age}, energy = {self.energy})"
+
   def display(self):
-    print(f"Hello i am {self.name}")
+    print(f"My name is {self.name}")
 
+
+if (__name__ == "__main__"):
+  
+  human = Inhabitant()
+  print(repr(human))
+  human.move(10)
+  print(repr(human))
+  human.eat(5)
+  print(repr(human))
+  human.eat(20)
+  print(repr(human))

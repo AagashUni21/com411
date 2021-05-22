@@ -2,7 +2,6 @@ from planet import Planet
 from robot import Robot
 from human import Human
 import matplotlib.pyplot as plt
-
 import random
 
 class Universe:
@@ -51,5 +50,8 @@ class Universe:
 
 if (__name__ == "__main__"):
   universe = Universe()
+  universe.generate()
+  universe.generate()
+  universe.generate()
   universe.generate()
   universe.show_populations()

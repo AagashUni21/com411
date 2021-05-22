@@ -1,8 +1,0 @@
-from human import Human
-from robot import Robot
-
-if (__name__ == "__main__"):
-  h = Human()
-  r = Robot()
-  h.display()
-  r.display()

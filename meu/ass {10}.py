@@ -27,4 +27,4 @@ def list_entity(entity, cols=[]):
     
 
 
-list_entity("['Earth', TRUE, 9.8]", cols=[0,2])
+list_entity(['Earth', "TRUE", 9.8], cols=[0,2])

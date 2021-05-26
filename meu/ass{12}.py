@@ -1,4 +1,4 @@
-def list_categories(parameter):
+def list_categories(categories):
     """
     Task 12: Display the contents of the dictionary categories.
     The function should take a single parameter categories which is a dictionary containing category names
@@ -8,8 +8,10 @@ def list_categories(parameter):
     :return: Does not return anything
     """
     # TODO: Your code here
-    print(parameter)
+    print(categories)
 
-list_categories(this_dict= {'name' : 'Aagash'
-                            'age' : '21'
-                            'bod' : '21.02.2000'})
+list_categories({
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+})

@@ -24,11 +24,4 @@ def list_entity(entity, cols=[]):
         listu.append(entity[k])
       print(listu)
     
-    
-
-
-<<<<<<< HEAD
 list_entity(['Earth', 'TRUE', 9.8], cols=[0,2])
-=======
-list_entity(['Earth', "TRUE", 9.8], cols=[0,2])
->>>>>>> 2b9ed70cfc533c749c9085e5b27face93129f965

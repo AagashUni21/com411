@@ -20,10 +20,10 @@ class Rectangle(Shape2D):#inherit from Shape2D
     self.width = float(width)#instance attribute
 
   def __repr__(self):
-      return "Name: {}\nLength:{}\Width:{}".format(self.name, self.length, self.width)#formal string representation
+      return "Name: {}\nLength:{}\nWidth:{}".format(self.name, self.length, self.width)#formal string representation
 
   def __str__(self):
-      return "Name: {}\nLength:{}\Width:{}".format(self.name, self.length, self.width)#formal string representation
+      return f'I am a {self.name} and I am {self.length} long and {self.width} wide.'#informal string representation
 
   def calculate_area(self):
       return self.length * self.width #instance method to calculate_area note that
@@ -40,7 +40,7 @@ class Triangle(Shape2D):#inherit from Shape2D
       return "Name: {}\nBase:{}\nHeight:{}".format(self.name, self.base, self.height)#formal string representation
 
   def __str__(self):
-      return "Name: {}\nBase:{}\nHeight:{}".format(self.name, self.base, self.height)#informal string representation
+      return f'I am a {self.name} and I am {self.base} wide and {self.height} tall.'#informal string representation
 
   def calculate_area(self):
       return float(0.5 * self.base * self.height) 
@@ -56,7 +56,7 @@ class Square(Rectangle):#inherit from Rectangle
       return "Name: {}\nLength:{}".format(self.name, self.length)
       #formal string representation
   def __str__(self):
-      return "Name: {}\nLength:{}".format(self.name, self.length)
+      return f'I am a {self.name} and I am {self.length} long and wide.'
       #informal string representation
   def calculate_area(self):
       return float(self.length * self.length) 
